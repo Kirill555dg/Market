@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:text="Cool Market"
+        android:textSize="70sp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity=""
+        android:layout_marginLeft="5dp"
+        android:text="The Menu:"
+        android:textSize="32sp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/CHB1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Пицца">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/CHB2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Роллы">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/CHB3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Закуски">
+            </CheckBox>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/CHB4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Холодные напитки">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/CHB5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Горячие напитки">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/CHB6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Десерты">
+            </CheckBox>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="5dp"
+        android:text="Способ доставки:"
+        android:textSize="24sp">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/RG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+            <RadioButton
+                android:id="@+id/RB1"
+                android:layout_width="137dp"
+                android:layout_height="50dp"
+                android:text="Курьер">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/RB2"
+                android:layout_width="137dp"
+                android:layout_height="50dp"
+                android:text="Самовывоз">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/RB3"
+                android:layout_width="137dp"
+                android:layout_height="50dp"
+                android:text="Дрон">
+            </RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ET"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Введите комментарий к заказу">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/B1"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="20dp"
+            android:text="Оформить заказ"
+            android:textSize="24sp">
+        </Button>
+        <Button
+            android:id="@+id/B2"
+            android:layout_gravity="right"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:text="Сбросить составление заказа"
+            android:textSize="14sp">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp">
+    </TextView>
+
+</LinearLayout>
