@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         ElementsBinding binding = ElementsBinding.inflate(getLayoutInflater());
 
         setContentView(binding.getRoot());
+        binding.RB2.setChecked(true);
 
         binding.RG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -100,8 +101,6 @@ public class MainActivity extends AppCompatActivity {
                         str += binding.RB2.getText();
                     } else if (binding.RB3.isChecked()) {
                         str += binding.RB3.getText();
-                    } else {
-                        str += "не выбран. Товар доставится в пункт самовывоза.";
                     }
                     str += "\n";
                     if (binding.ET.getText() != null) {
@@ -119,8 +118,8 @@ public class MainActivity extends AppCompatActivity {
                 binding.CHB5.setChecked(false);
                 binding.CHB6.setChecked(false);
                 binding.RB1.setChecked(false);
-                binding.RB2.setChecked(false);
                 binding.RB3.setChecked(false);
+                binding.RB2.setChecked(true);
                 binding.ET.setText("");
             }
         });
